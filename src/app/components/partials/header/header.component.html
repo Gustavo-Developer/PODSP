@@ -1,0 +1,25 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Japan Shokudo Massamun</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">Entrar</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Usuário</a>
+          <div class="menu">
+            <a routerLink="/profile">Perfil</a>
+            <a routerLink="/orders">Pedidos</a>
+            <a>Sair</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">
+            Carrinho <span>{{ cartQuantity }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

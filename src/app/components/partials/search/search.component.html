@@ -1,0 +1,10 @@
+<div>
+  <input
+    #s
+    type="text"
+    placeholder="Buscar Japan Shokudo Massamun"
+    (keyup.enter)="search(s.value)"
+    [value]="searchTerm"
+  />
+  <button (click)="search(s.value)">Pesquisar</button>
+</div>
