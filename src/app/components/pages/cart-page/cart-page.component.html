@@ -1,8 +1,8 @@
-<app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title>
+<!-- <app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title> -->
 <app-not-found
   [visible]="!cart || !cart.items.length"
-  notFoundMessage="Cart Page Is Empty!"
-  resetLinkText="Go To Homepage"
+  notFoundMessage="Carrinho esta vazio!"
+  resetLinkText="Voltar"
 ></app-not-found>
 <div *ngIf="cart && cart.items.length" class="container">
   <ul>
@@ -29,12 +29,12 @@
         </select>
       </div>
       <div>
-        {{ cartItem.price | currency }}
+        {{ cartItem.price | currency : "BRL" }}
       </div>
 
       <div>
         <button class="remove-button" (click)="removeFromCart(cartItem)">
-          Remove
+          Excluir
         </button>
       </div>
     </li>
@@ -42,9 +42,9 @@
   <div class="checkout">
     <div>
       <div class="foods-count">{{ cart.totalCount }}</div>
-      <div class="total-price">{{ cart.totalPrice | currency }}</div>
+      <div class="total-price">{{ cart.totalPrice | currency : "BRL" }}</div>
     </div>
 
-    <a routerLink="/checkout">Proceed to Checkout</a>
+    <button (click)="delivery()">Prosseguir com o pedido</button>
   </div>
 </div>

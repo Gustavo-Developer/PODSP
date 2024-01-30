@@ -6,26 +6,30 @@ import { CartItem } from 'src/app/shared/models/CartItem';
 @Component({
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
-  styleUrls: ['./cart-page.component.css']
+  styleUrls: ['./cart-page.component.css'],
 })
 export class CartPageComponent implements OnInit {
   cart!: Cart;
   constructor(private cartService: CartService) {
     this.cartService.getCartObservable().subscribe((cart) => {
       this.cart = cart;
-    })
-   }
-
-  ngOnInit(): void {
+    });
   }
 
-  removeFromCart(cartItem:CartItem){
+  ngOnInit(): void {}
+
+  removeFromCart(cartItem: CartItem) {
     this.cartService.removeFromCart(cartItem.food.id);
   }
 
-  changeQuantity(cartItem:CartItem,quantityInString:string){
+  changeQuantity(cartItem: CartItem, quantityInString: string) {
     const quantity = parseInt(quantityInString);
     this.cartService.changeQuantity(cartItem.food.id, quantity);
   }
 
+  delivery(): any {
+    const pedido = `https://api.whatsapp.com/send?phone=5511943236880&text=Ol%C3%A1%20PodSp%20%F0%9F%91%8B%0A%0AGostaria%20de%20fazer%20um%20pedido:%20%0A%0AQuantidade%20de%20Itens:%20${this.cart.totalCount}%0AValor%20Total:%20R$${this.cart.totalPrice},00`;
+
+    window.location.href = pedido;
+  }
 }

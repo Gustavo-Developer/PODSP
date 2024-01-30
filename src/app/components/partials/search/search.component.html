@@ -1,10 +1,16 @@
-<div>
+<div class="content-search">
   <input
     #s
     type="text"
-    placeholder="Buscar Japan Shokudo Massamun"
+    placeholder="Pesquise em PodSP"
     (keyup.enter)="search(s.value)"
     [value]="searchTerm"
   />
-  <button (click)="search(s.value)">Pesquisar</button>
+  <button (click)="search(s.value)">
+    <img
+      class="search"
+      src="../../../../assets/logos/search.png"
+      alt="search icon"
+    />
+  </button>
 </div>

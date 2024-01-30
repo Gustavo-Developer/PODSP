@@ -1,4 +1,4 @@
-div{
+div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,11 +6,13 @@ div{
   font-size: 1.5rem;
   font-weight: 100;
   height: 15rem;
+
+  margin: 3.5rem 0 0 0;
 }
 
-a{
+a {
   font-size: 1.1rem;
-  background-color: #e72929;
+  background-color: #2f006c;
   color: white;
   border-radius: 10rem;
   padding: 0.7rem 1rem;
@@ -18,7 +20,7 @@ a{
   opacity: 0.8;
 }
 
-a:hover{
+a:hover {
   opacity: 1;
   cursor: pointer;
 }
