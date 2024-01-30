@@ -7,6 +7,13 @@ ul {
   padding: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .item-content {
   border: 1px solid #333 !important;
 
@@ -15,17 +22,12 @@ ul {
   justify-content: center;
   align-items: center;
 
+  width: 180px !important;
+
+  /* max-width: 300px !important; */
+
   background-color: #fff;
-}
 
-.item-content img {
-  object-fit: cover;
-  width: 70%;
-}
-
-li a {
-  height: 22.5rem;
-  width: 20rem;
   border: 1px solid whitesmoke;
   border-radius: 1rem;
   margin: 0.5rem;
@@ -33,6 +35,11 @@ li a {
   flex-direction: column;
   overflow: hidden;
   color: #2f006c;
+}
+
+.item-content img {
+  object-fit: cover;
+  width: 70%;
 }
 
 li a:hover {
