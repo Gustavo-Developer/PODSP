@@ -3,6 +3,9 @@ div {
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .content-search {

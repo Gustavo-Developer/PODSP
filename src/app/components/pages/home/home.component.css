@@ -14,6 +14,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: #fff;
 }
 
 .item-content img {

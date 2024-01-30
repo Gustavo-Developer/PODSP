@@ -5,14 +5,13 @@
 >
 </app-not-found>
 <div *ngIf="food.id" class="container">
-  <img [src]="food.imageUrl" [alt]="food.name" />
+  <img [src]="food.imageUrl" [alt]="food.name" class="img-card" />
 
   <div class="details">
     <div class="header">
       <span class="name">
         {{ food.name }}
       </span>
-      <span class="favorite {{ food.favorite ? '' : 'not' }}">❤</span>
     </div>
 
     <div class="tags">

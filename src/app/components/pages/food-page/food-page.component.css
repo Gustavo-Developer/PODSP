@@ -15,8 +15,12 @@ img {
   border-radius: 3rem;
   flex: 1 0;
   object-fit: cover;
-  height: 35rem;
+  height: auto;
   margin: 1rem;
+}
+
+.img-card {
+  width: 20% !important;
 }
 
 .details {

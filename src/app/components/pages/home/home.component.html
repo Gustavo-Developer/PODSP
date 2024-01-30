@@ -5,8 +5,6 @@
 <ul>
   <li *ngFor="let food of foods">
     <a routerLink="/food/{{ food.id }}" class="item-content">
-      <span class="favorite {{ food.favorite ? '' : 'not' }}"> ❤ </span>
-
       <img [src]="food.imageUrl" [alt]="food.name" />
       <div class="content">
         <div class="name">
