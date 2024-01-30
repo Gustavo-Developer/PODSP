@@ -22,9 +22,9 @@ ul {
   justify-content: center;
   align-items: center;
 
-  width: 180px !important;
+  width: 100% !important;
 
-  /* max-width: 300px !important; */
+  max-width: 300px !important;
 
   background-color: #fff;
 
