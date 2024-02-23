@@ -34,7 +34,7 @@ export class CartPageComponent implements OnInit {
     // Itera sobre a matriz de itens no objeto cart
     this.cart.items.forEach((item, index) => {
       // Adiciona o nome do item à string
-      itemsString += `${item.food.name} ☁️\n`;
+      itemsString += `☁️ ${item.food.name} \n`;
 
       // Adiciona uma vírgula e espaço após o nome do item, exceto para o último item
       if (index < this.cart.items.length - 1) {
