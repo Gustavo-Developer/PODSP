@@ -28,8 +28,24 @@ export class CartPageComponent implements OnInit {
   }
 
   delivery(): any {
-    const pedido = `https://api.whatsapp.com/send?phone=5511943236880&text=Ol%C3%A1%20PodSp%20%F0%9F%91%8B%0A%0AGostaria%20de%20fazer%20um%20pedido:%20%0A%0AQuantidade%20de%20Itens:%20${this.cart.totalCount}%0AValor%20Total:%20R$${this.cart.totalPrice},00`;
+    // Inicializa uma string vazia para armazenar os nomes dos itens
+    let itemsString = '';
 
+    // Itera sobre a matriz de itens no objeto cart
+    this.cart.items.forEach((item, index) => {
+      // Adiciona o nome do item à string
+      itemsString += `${item.food.name} ☁️\n`;
+
+      // Adiciona uma vírgula e espaço após o nome do item, exceto para o último item
+      if (index < this.cart.items.length - 1) {
+        itemsString += ', ';
+      }
+    });
+
+    // Constrói a URL do pedido com a string de itens
+    const pedido = `https://api.whatsapp.com/send?phone=5511943236880&text=Ol%C3%A1%20PodSp%20%F0%9F%91%8B%0A%0AGostaria%20de%20fazer%20um%20pedido:%0A${itemsString}%0AQuantidade%20de%20Itens:%20${this.cart.totalCount}%0AValor%20Total:%20R$${this.cart.totalPrice},00`;
+
+    // Redireciona para a URL do pedido
     window.location.href = pedido;
   }
 }
