@@ -34,7 +34,7 @@ export class CartPageComponent implements OnInit {
     // Itera sobre a matriz de itens no objeto cart
     this.cart.items.forEach((item, index) => {
       // Adiciona o nome do item à string, seguido de quebra de linha
-      itemsString += `☁️ ${item.food.name} \n`;
+      itemsString += `☁️ ${item.food.name} %0A`;
     });
 
     // Constrói a URL do pedido com a string de itens
