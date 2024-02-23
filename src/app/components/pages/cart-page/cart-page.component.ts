@@ -28,13 +28,13 @@ export class CartPageComponent implements OnInit {
   }
 
   delivery(): any {
-    // Inicializa uma string vazia para armazenar os nomes dos itens
+    // Inicializa uma string vazia para armazenar os itens do pedido
     let itemsString = '';
 
     // Itera sobre a matriz de itens no objeto cart
     this.cart.items.forEach((item, index) => {
-      // Adiciona o nome do item à string, seguido de quebra de linha
-      itemsString += `☁️ ${item.food.name} %0A`;
+      // Adiciona a quantidade e o nome do item à string, seguido de uma quebra de linha
+      itemsString += `☁️ ${item.quantity}x ${item.food.name} %0A`;
     });
 
     // Constrói a URL do pedido com a string de itens
