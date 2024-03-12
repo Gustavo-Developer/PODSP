@@ -3,6 +3,5 @@ export class Food {
   name!: string;
   price!: number;
   tags?: string[];
-  favorite!: boolean;
   imageUrl!: string;
 }

@@ -1,13 +1,13 @@
 import { Food } from './app/shared/models/Food';
 import { Tag } from './app/shared/models/Tag';
 
+//CADASTRAR OS PODS
 export const sample_foods: Food[] = [
   // Ignite v80
   {
     id: 'igv801',
     name: 'Grapefruit Mint',
     price: 105,
-    favorite: false,
     imageUrl: 'assets/ignitev80-grapefruit-mint.png',
     tags: ['Ignite'],
   },
@@ -15,7 +15,6 @@ export const sample_foods: Food[] = [
     id: 'igv802',
     name: 'Strawberry Ice',
     price: 105,
-    favorite: false,
     imageUrl: 'assets/ignitev80-strawberry-ice.png',
     tags: ['Ignite'],
   },
@@ -23,7 +22,6 @@ export const sample_foods: Food[] = [
     id: 'igv803',
     name: 'Passion Fruit Sour Kiwi',
     price: 105,
-    favorite: false,
     imageUrl: 'assets/ignitev80-passion-fruit-sour-kiwi.png',
     tags: ['Ignite'],
   },
@@ -33,7 +31,6 @@ export const sample_foods: Food[] = [
     id: 'elf5k1',
     name: 'Grape',
     price: 70,
-    favorite: false,
     imageUrl: 'assets/elfbar5k-grape.jpg',
     tags: ['ElfBar'],
   },
@@ -41,7 +38,6 @@ export const sample_foods: Food[] = [
     id: 'elf5k2',
     name: 'Watermelon Ice',
     price: 70,
-    favorite: false,
     imageUrl: 'assets/elfbar5k-watermelon-ice.jpg',
     tags: ['ElfBar'],
   },
@@ -49,7 +45,6 @@ export const sample_foods: Food[] = [
     id: 'elf5k3',
     name: 'Apple Peach',
     price: 70,
-    favorite: false,
     imageUrl: 'assets/elfbar5k-apple-peach.jpg',
     tags: ['ElfBar'],
   },
@@ -59,7 +54,6 @@ export const sample_foods: Food[] = [
     id: 'ox8k1',
     name: 'Peach Blue Razz',
     price: 95,
-    favorite: false,
     imageUrl: 'assets/oxbar8k-peach-blue-razz.png',
     tags: ['OxBar'],
   },
@@ -67,7 +61,6 @@ export const sample_foods: Food[] = [
     id: 'ox8k2',
     name: 'Sakura Grape',
     price: 95,
-    favorite: false,
     imageUrl: 'assets/oxbar8k-sakura-grape.png',
     tags: ['OxBar'],
   },
@@ -75,7 +68,6 @@ export const sample_foods: Food[] = [
     id: 'ox8k3',
     name: 'Fruit Paradise',
     price: 95,
-    favorite: false,
     imageUrl: 'assets/oxbar8k-fruit-paradise.png',
     tags: ['OxBar'],
   },
@@ -83,7 +75,6 @@ export const sample_foods: Food[] = [
     id: 'ox8k4',
     name: 'Cranberry Lemon Ice',
     price: 95,
-    favorite: false,
     imageUrl: 'assets/oxbar8k-cranberry-lemon-ice.png',
     tags: ['OxBar'],
   },
@@ -91,7 +82,6 @@ export const sample_foods: Food[] = [
     id: 'ox8k5',
     name: 'Kiwi Passion Kick',
     price: 95,
-    favorite: false,
     imageUrl: 'assets/oxbar8k-kiwi-passion-kick.png',
     tags: ['OxBar'],
   },
@@ -101,22 +91,14 @@ export const sample_foods: Food[] = [
     id: 'elf4k1',
     name: 'Triple Berry Ice',
     price: 65,
-    favorite: false,
     imageUrl: 'assets/elfbar4k-triple-berry-ice.jpg',
-    tags: ['ElfBar'],
-  },
-  {
-    id: 'elf4k2',
-    name: 'Lemon Mint',
-    price: 65,
-    favorite: false,
-    imageUrl: 'assets/elfbar4k-lemon-mint.jpg',
     tags: ['ElfBar'],
   },
 ];
 
+//CADASTRAR CATEGORIA
 export const sample_tags: Tag[] = [
-  { name: 'ElfBar', count: 7 },
-  { name: 'OxBar', count: 5 },
-  { name: 'Ignite', count: 3 },
+  { name: 'ElfBar' },
+  { name: 'OxBar' },
+  { name: 'Ignite' },
 ];
